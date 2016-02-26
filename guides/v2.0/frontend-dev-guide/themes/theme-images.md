@@ -2,8 +2,8 @@
 layout: default
 group: fedg
 subgroup: A_Themes
-title: Configure images properties for a theme
-menu_title: Configure images properties for a theme
+title: 配置一个主题的预览图片
+menu_title: 配置一个主题的预览图片
 menu_order: 4
 github_link: frontend-dev-guide/themes/theme-images.md
 ---
@@ -12,7 +12,7 @@ github_link: frontend-dev-guide/themes/theme-images.md
 
 The properties of product images used on the storefront are stored in the `view.xml` configuration file. This topic provides all details about what properties are available and how to configure them.
 
-<h2 id="view_xml_structure">Configure image properties in view.xml</h2>
+<h2 id="view_xml_structure">在view.xml配置主题的预览图片</h2>
 
 The conventional location of `view.xml` for a theme is:
 {% raw %}
