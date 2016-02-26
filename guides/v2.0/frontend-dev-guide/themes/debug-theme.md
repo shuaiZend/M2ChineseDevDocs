@@ -2,8 +2,8 @@
 layout: default  
 group: fedg
 subgroup: A_Themes
-title: Locate templates, layouts, and styles
-menu_title: Locate templates, layouts, and styles
+title: 查找模板,布局以及样式
+menu_title: 查找模板,布局以及样式
 menu_order: 6
 github_link: frontend-dev-guide/themes/debug-theme.md
 redirect_from: /guides/v1.0/frontend-dev-guide/themes/debug-theme.html
@@ -13,7 +13,7 @@ redirect_from: /guides/v1.0/frontend-dev-guide/themes/debug-theme.html
 
 When you create a Magento theme, you might need to create override files for default theme and module view files. To do so, you must determine which template, layout, and style files Magento uses. This topic describes how to do this.
 
-<h2 id="debug-theme-templ">Locate templates</h2>
+<h2 id="debug-theme-templ">查找模板文件</h2>
 
 To locate the template that is responsible for a specific part of the storefront or Admin, you can use Magento built-in template hints.
 
