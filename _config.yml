@@ -1,8 +1,8 @@
 # Site settings
 encoding: "utf-8"
-title: Magento 2 Developer Documentation
+title: Magento2中文开发文档
 email: mailto:DL-Magento-Doc-Feedback@ebay.com
-description: Magento 2 Developer Guide
+description: Magento2中文开发手册
 baseurl: "/"
 # url: "https://github.com/magento/devdocs" # the base hostname & protocol for your site
 # twitter_username: magento
@@ -12,10 +12,10 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 gdeurl: "/guides/v2.0/"
 githuburl: "https://github.com/magento/devdocs/tree/develop/guides/v2.0/"
-namem2fedg: "Magento 2 Frontend Developer's Guide"
-namem2devgde: "Magento 2 Developer's Guide"
-namem2apiref: "Magento 2 API Reference"
-namem2install: "Magento 2 Installation Guide"
+namem2fedg: "Magento2前端开发手册"
+namem2devgde: "Magento2开发手册"
+namem2apiref: "Magento2 API文档"
+namem2install: "Magento2安装手册"
 mage2000url: "https://github.com/magento/magento2/blob/develop/"
 # toc_baseurl: "https://github.corp.ebay.com/pages/Magento/devdocs_internal"
 m1xgdeurl: "/guides/m1x/"
