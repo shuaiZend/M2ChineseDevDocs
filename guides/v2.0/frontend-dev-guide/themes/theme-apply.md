@@ -2,8 +2,8 @@
 layout: default
 group: fedg
 subgroup: A_Themes
-title: Apply and configure a theme in Admin
-menu_title: Apply and configure a theme in Admin
+title: 后台应用及设置主题
+menu_title: 后台应用及设置主题
 menu_order: 4
 github_link: frontend-dev-guide/themes/theme-apply.md
 redirect_from: /guides/v1.0/frontend-dev-guide/themes/theme-apply.html
@@ -20,7 +20,7 @@ Also, it gives information how to add a theme independent logo for your store.
 {:toc}
 
 <!--
-<h2 id="theme-apply-cache">Disable the system cache</h2>
+<h2 id="theme-apply-cache">禁用系统缓存</h2>
 
 When Magento system cache is enabled, you must clear it each time to see your design changes reflected on a store front. To avoid this, disable certain system cache types while you make design changes.
 To do this:
@@ -45,7 +45,7 @@ Make sure that you [set](#{{site.gdeurl}}config-guide/cli/config-cli-subcommands
 ## Apply a theme {#theme-apply-apply}
 After you <a href="{{site.gdeurl}}frontend-dev-guide/themes/theme-create.html">add your theme to the file system</a>, you can apply it to your store. You apply a theme in Admin.
 
-To apply a theme:
+应用主题:
 
 1. In Admin go to **CONTENT** > **Design** > **Themes**. Make sure your theme appears in the theme list.
 2. Go to **Stores** > **Configuration** > **Design**.
