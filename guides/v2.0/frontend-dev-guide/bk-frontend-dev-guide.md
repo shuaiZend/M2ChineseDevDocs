@@ -1,21 +1,21 @@
 ---
 layout: default
 group: fedg
-title: Frontend Developer Guide
-menu_title: Introduction
+title: Magento前端开发手册
+menu_title: 介绍
 menu_order: 1
 github_link: frontend-dev-guide/bk-frontend-dev-guide.md
 redirect_from: /guides/v1.0/frontend-dev-guide/bk-frontend-dev-guide.html
 ---
 
-<h2 id="overview-introduction">Introduction</h2>
-This document provides instructions for creating and installing custom storefront themes for a Magento application. It describes Magento's content rendering process and explains the view layer of the system to the extent required to build a theme efficiently. The document also walks through everyday frontend developer's tasks.
+<h2 id="overview-introduction">介绍</h2>
+本文档提供了创建和安装自定义店面主题的 Magento 应用说明。它描述了 Magento 的内容呈现过程，如何高效地创建一个主题所需要的系统的视图层。该文档还是Magento前端开发人员的必读手册。
 
-Developing the view part of a custom module and customizing the Magento Admin panel design is out of the scope of this guide.
+开发一个自定义模块的视图部分和定制 Magento 管理员面板设计是超出了本手册的范围.
 
-Frontend developers can use this guide to create custom themes to tailor the Magento storefront for a specific customer.
+前端开发人员可以使用本指南来创建自定义主题，来为特定客户量身定制的Magento店面.
 
-<p>You can apply these levels of customization to your site, where the levels require different development skills:</p>
+<p>根据不同水平的开发技能,您可以定制不同的级别到您的网店:</p>
 <ul>
 <li><p>You can make relatively simple changes to your site using cascading style sheets (CSS) to change colors and the look-and-feel of various interface components, replacing images, and other relatively cosmetic changes.</p>
 <p>No structural changes are made to pages&mdash;you accept the structure of the site provided by default by modules you load on to your site.</p>
@@ -47,20 +47,20 @@ To implement what is discussed in this guide, you need a working Magento install
 *	Apple Safari Mobile for iPad, iPad Mini, iPad with Retina Display (iOS 6 or later), for Desktop Frontend
 *	Apple Safari Mobile for iPhone 4 or later; iOS 6 or later, for Mobile Frontend
 
-To use this guide, you must be familiar with:
+使用手册，您需要熟悉以下技能:
 
 *	CSS and CSS 3
 *	HTML and HTML 5
 *	XML
 *	JavaScript
-*	Responsive Web Design (RWD)
+*	Responsive Web Design (RWD) 响应式网页设计
 
 #### Related topics:
 
-*	<a href="{{ site.gdeurl }}frontend-dev-guide/themes/theme-general.html">Themes</a>
-*	<a href="{{ site.gdeurl }}frontend-dev-guide/css-topics/theme-ui-lib.html">Magento UI library</a>
-*	<a href="{{ site.gdeurl }}frontend-dev-guide/css-topics/css-overview.html">Cascading style sheets (CSS) </a>
-*	<a href="{{ site.gdeurl }}coding-standards/code-standard-javascript.html">JavaScript coding standard</a>
-*	<a href="{{ site.gdeurl }}frontend-dev-guide/responsive-web-design/rwd_overview.html">Responsive web design</a>
-*	<a href="{{ site.gdeurl }}architecture/behavior/xlate.html">Translation</a>
+*	<a href="{{ site.gdeurl }}frontend-dev-guide/themes/theme-general.html">主题(Theme)</a>
+*	<a href="{{ site.gdeurl }}frontend-dev-guide/css-topics/theme-ui-lib.html">Magento UI库</a>
+*	<a href="{{ site.gdeurl }}frontend-dev-guide/css-topics/css-overview.html">样式表(CSS) </a>
+*	<a href="{{ site.gdeurl }}coding-standards/code-standard-javascript.html">JavaScript编码标准</a>
+*	<a href="{{ site.gdeurl }}frontend-dev-guide/responsive-web-design/rwd_overview.html">响应式网页设计(RWD)</a>
+*	<a href="{{ site.gdeurl }}architecture/behavior/xlate.html">翻译</a>
 
