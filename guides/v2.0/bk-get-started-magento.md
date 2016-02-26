@@ -1,40 +1,39 @@
 ---
 layout: default
 group: get-started-magento
-title: Getting started with Magento
-menu_title: Getting started with Magento
+title: Magento入门
+menu_title: Magento入门
 menu_order: 1
 menu_node:
 github_link: bk-get-started-magento.md
 redirect_from: /guides/v1.0/bk-get-started-magento.html
 ---
 
-<h2 id="highlights">Getting started with Magento</h2>
+<h2 id="highlights">Magento入门</h2>
 
-Welcome to Magento 2.0 documentation! And welcome to Magento 2.0!
+欢迎来到Magento2文档!欢迎使用Magento2!
 
-Here we explain the Magento platform and components from the perspective of several audiences: merchants, web store developers (frontend developers), extension developers, system administrators, installers, and integrators.
+这里我们将从几个角度来向大家解释Magento: 商家, 网站开发者(前端开发), 扩展开发者,系统管理员,安装人员以及集成商.
 
-Magento is a highly-customizable eCommerce platform and content management system that is primarily used to build online storefronts or web sites for selling merchandise.
+Magento是高度可定制的电子商务平台和内容管理系统，主要用来构建在线店面或销售商品的网站。
 
-Magento is written using the PHP programming language, and leverages elements of the Zend framework and the model-view-controller architecture. Magento runs on the MySQL relational database, and Magento schema and tables are included in the Magento installation package.
+Magento 使用 PHP 编程语言，编写并利用 Zend 框架和模型-视图-控制器架构的元素。Magento 运行 MySQL 数据库中，并在 Magento 安装软件包中包括 Magento 架构和表。
 
-<h2 id="help">Help improve this documentation</h2>
+<h2 id="help">帮助改善文档</h2>
 
-Magento 2.0 product documentation is hosted on GitHub, and we welcome your
-feedback there.
+Magento2.0 文档托管于Github，欢迎翻译及反馈
 
-Click the **Edit this page on GitHub** link at the top of a documentation page to
-open the file in our GitHub repository, where you are invited to suggest changes
-by creating pull requests, or open a discussion by creating an issue.
+点击页面顶部上的**Edit this page on GitHub** 链接，您将参与到改善文档的过程中。
 
-For more information, see our <a href="{{ site.gdeurl }}extension-dev-guide/Contribute_edg.html">Contributors Guide</a>.
+更多信息, 请浏览<a href="{{ site.gdeurl }}extension-dev-guide/Contribute_edg.html">捐助者指南</a>.
 
-<h2 id="contact-us">Contact us</h2>
-Feel free to contact the documentation team directly at
+<h2 id="contact-us">联系我们</h2>
+官方文档英文文档团队:
 <a href="mailto:DL-Magento-Doc-Feedback@ebay.com">DL-Magento-Doc-Feedback@ebay.com</a>
+Magento2中文翻译团队:
+<a href="mailto:shuai.zend@qq.com">shuai.zend@qq.com</a>
 
-#### Related topics
+#### 相关主题
 
-*   <a href="{{ site.gdeurl }}release-notes/bk-release-notes.html">Release Notes</a>
-*   <a href="{{ site.gdeurl }}architecture/bk-architecture.html">Architecture Guide</a>
+*   <a href="{{ site.gdeurl }}release-notes/bk-release-notes.html">发行说明</a>
+*   <a href="{{ site.gdeurl }}architecture/bk-architecture.html">体系结构指南</a>
