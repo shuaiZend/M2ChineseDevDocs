@@ -1,8 +1,8 @@
 ---
 layout: default
 group: fedg
-title: Conventional notations used in this Guide
-menu_title: Conventional notations used in this Guide
+title: 本指南中使用的常规符号
+menu_title: 本指南中使用的常规符号
 menu_order: 2
 github_link: frontend-dev-guide/conventions.md
 ---
