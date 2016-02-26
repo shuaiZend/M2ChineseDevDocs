@@ -2,28 +2,28 @@
 layout: default
 group: install_pre
 subgroup: Getting Started
-title: System requirements
-menu_title: Magento system requirements
+title: Magento系统需求
+menu_title: Magento2系统需求
 menu_node: parent
 menu_order: 1
 github_link: install-gde/system-requirements.md
 redirect_from: /guides/v1.0/install-gde/system-requirements.html
 ---
 
-### Operating systems (Linux x86-64)
+### 操作系统(Linux x86-64)
 
-Linux distributions such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and so on
+RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian等Linux发行版本都可以.
 
-### Composer (latest stable version)
-Composer is required for developers who wish to contribute to the Magento 2 codebase or anyone who wishes to develop Magento extensions
+### Composer (最新稳定版)
+Composer 是 PHP 用来管理依赖（dependency）关系的工具。你可以在自己的Magento中声明所依赖的外部工具库（libraries），Composer 会帮你安装这些依赖的库文件。
 
-### Web servers
+### Web服务器
 *	<a href="http://httpd.apache.org/download.cgi" target="_blank">Apache 2.2 or 2.4</a>
 	
-	In addition, the apache `mod_rewrite` module must be enabled. `mod_rewrite` enables the server to perform URL rewriting. For more information, see <a href="{{ site.gdeurl }}install-gde/prereq/apache.html">our Apache documentation</a>.
-*	nginx 1.8 (or <a href="http://nginx.org/en/linux_packages.html#mainline" target="_blank">latest mainline version</a>)
+	apache的`mod_rewrite`模块必须激活. `mod_rewrite`是用来重写URL的.更多信息请浏览<a href="{{ site.gdeurl }}install-gde/prereq/apache.html">我们的Apache文档</a>.
+*	nginx 1.8 (或者 <a href="http://nginx.org/en/linux_packages.html#mainline" target="_blank">最新版本</a>)
 
-### Database
+### 数据库
 
 MySQL 5.6 (Oracle or Percona)
 	
@@ -31,11 +31,11 @@ MySQL 5.6 (Oracle or Percona)
 
 *	5.6.x
 *	5.5.x 
-*	7.0.2 (supported by Magento version 2.0.1 and later only)
+*	7.0.2 (Magento2.0.1以上版本支持)
 
-Documentation: <a href="{{ site.gdeurl }}install-gde/prereq/php-centos.html" target="_blank">CentOS</a>, <a href="{{ site.gdeurl }}install-gde/prereq/php-ubuntu.html" target="_blank">Ubuntu</a>
+安装文档: <a href="{{ site.gdeurl }}install-gde/prereq/php-centos.html" target="_blank">CentOS</a>, <a href="{{ site.gdeurl }}install-gde/prereq/php-ubuntu.html" target="_blank">Ubuntu</a>
 
-#### Required PHP extensions:
+#### 需要的PHP扩展:
 
 *	<a href="http://php.net/manual/en/book.bc.php" target="_blank">bc-math</a> <img src="{{ site.baseurl }}common/images/ee-only_small.png">
 *	<a href="http://php.net/manual/en/book.curl.php" target="_blank">curl</a>
@@ -57,7 +57,7 @@ We strongly recommend you verify the  <a href="http://php.net/manual/en/intro.op
 
 If you must install it separately, see the <a href="http://php.net/manual/en/opcache.setup.php" target="_blank">PHP OPcache documentation</a>.
 
-#### PHP settings
+#### PHP设置
 We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Magento.
 
 For more information, see our recommendations for <a href="{{ site.gdeurl }}install-gde/prereq/php-centos.html#instgde-prereq-timezone">CentOS</a> and <a href="{{ site.gdeurl }}install-gde/prereq/php-ubuntu.html#instgde-prereq-timezone">Ubuntu</a>. 
@@ -66,10 +66,10 @@ For more information, see our recommendations for <a href="{{ site.gdeurl }}inst
 *	A valid security certificate is required for HTTPS.
 *	Self-signed SSL certificates are not supported.
 
-### Mail server
+### 邮件服务器
 Mail Transfer Agent (MTA) or an SMTP server
 
-### Magento can utilize the following technologies:
+### Magento2还可以利用以下技术:
 *	<a href="{{ site.gdeurl }}config-guide/redis/config-redis.html">Redis</a> version 3.0 for page caching
 *	<a href="{{ site.gdeurl }}config-guide/varnish/config-varnish.html">Varnish</a> version 3.5 or latest stable 4.x version for page caching
 *	<a href="{{ site.gdeurl }}config-guide/memcache/memcache.html">memcached</a> latest stable version for session storage with either `memcache` or `memcached` PHP extensions (latest stable version)
@@ -88,7 +88,7 @@ Mail Transfer Agent (MTA) or an SMTP server
 
 		These <a href="{{ site.gdeurl }}config-guide/multi-master/multi-master.html">master databases</a> provide scalability advantages for different functional areas of the Magento application: checkout, orders, and product data. Available for Magento EE only.
 
-### Optional but recommended:
+###可选项，但是建议使用的:
 
 *	<a href="http://xdebug.org/download.php" target="_blank">php_xdebug2.2.0</a> or later (development environments only; can have an adverse effect on performance)
 
@@ -99,6 +99,6 @@ Mail Transfer Agent (MTA) or an SMTP server
 
 *	PHPUnit (as a command-line tool) 4.1 or later
 
-### Documentation
+### 文档
 
-<a href="{{ site.gdeurl }}install-gde/prereq/prereq-overview.html">Install Magento prerequisites</a>
+<a href="{{ site.gdeurl }}install-gde/prereq/prereq-overview.html">安装Magento2必备组件</a>
