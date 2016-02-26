@@ -2,8 +2,8 @@
 layout: default  
 group: fedg
 subgroup: A_Themes
-title: Create a theme
-menu_title: Create a theme
+title: 创建一个主题
+menu_title: 创建一个主题
 menu_order: 2
 github_link: frontend-dev-guide/themes/theme-create.md
 redirect_from: /guides/v1.0/frontend-dev-guide/themes/theme-create.html
