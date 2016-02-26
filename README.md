@@ -1,12 +1,13 @@
-# Magento Developer Documentation
+# Magento中文开发文档
 
-Welcome! This site contains the latest Magento developer documentation for ongoing Magento 2.0 releases.
+此站点为Magento2.0中文开发文档
 
-To contribute, please fork the develop branch. We won't accept pull requests into master.
+欢迎Fork翻译该文档
 
 # Building this site
 
-You can build this site yourself using Jekyll. Here's how:
+你可以使用Jekyll创建这个文档. 
+创建方法如下:
 
 ```bash
 # Copy the sample config file and name it "config.yml"
@@ -19,7 +20,7 @@ $ bundle install
 $ bin/jekyll serve
 ```
 
-If you have questions, open an issue and ask us. We're looking forward to hearing from you!
+如果有任何问题，请联系下面:
 
 *	<a href="https://twitter.com/MagentoDevDocs" class="twitter-follow-button" data-show-count="false">Follow @MagentoDevDocs</a>
 
