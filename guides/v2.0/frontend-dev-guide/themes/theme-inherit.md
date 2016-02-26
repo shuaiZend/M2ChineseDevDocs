@@ -2,8 +2,8 @@
 layout: default
 group: fedg
 subgroup: A_Themes
-title: Theme inheritance
-menu_title: Theme inheritance
+title: 主题的继承
+menu_title: 主题的继承
 menu_order: 5
 github_link: frontend-dev-guide/themes/theme-inherit.md
 redirect_from: /guides/v1.0/frontend-dev-guide/themes/theme-inherit.html
@@ -22,7 +22,7 @@ The fallback order is slightly different for static assets (CSS, JavaScript, fon
 For comprehensive information about developing theme components, see
 subsequent chapters in this guide.
 
-<h2>Set a parent theme</h2>
+<h2>设置一个父级主题</h2>
 
 A parent theme is specified in the child theme `theme.xml` declaration file.
 
