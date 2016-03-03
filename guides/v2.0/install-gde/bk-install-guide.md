@@ -2,44 +2,44 @@
 layout: default
 group: install2
 subgroup: Getting Started
-title: Installation overview
-menu_title: Installation overview
+title: 安装概述
+menu_title: 安装概述
 menu_node: 
 menu_order: 1
 github_link: install-gde/bk-install-guide.md
 redirect_from: /guides/v1.0/install-gde/bk-install-guide.html
 ---
 
-<h2>Magento software installation</h2>
-Hi, we're glad you're among the 240,000 merchants worldwide who put their trust in our eCommerce software. We've gathered some information to help you get started with Magento and with your Magento installation. 
+<h2>Magento软件安装</h2>
+你好,欢迎你选择全球240000家商家共同的使用和信任的Magento.我们收集了一些信息，帮助您入门 Magento 与 Magento 安装。
 
-We have some resources here to help get you started using the eCommerce platform of the future&mdash;Magento 2.
+我们这里有一些资源以帮助您开始使用未来的电子商务平台&mdash;Magento 2.
 
 It’s what we do.
 
-<h2 id="install-how-install">Step 1: Find the installation that's right for you</h2>
-<a href="{{ site.gdeurl }}install-gde/continue.html">Choose how to install the Magento software</a>.
+<h2 id="install-how-install">第一步,选择如何安装您的Magento</h2>
+<a href="{{ site.gdeurl }}install-gde/continue.html">选择如何安装您的Magento</a>.
 
-<h2 id="install-verify-prereq">Step 2: Verify your prerequisites</h2>
-Use the following table to verify you have the correct prerequisites to install the Magento software. If you used a shared hosting provider, you can skip this step.
+<h2 id="install-verify-prereq">第二步,Magento运行需要的一些必备组件</h2>
+使用下表来验证您具有正确的Magento需要的系统必备组件。如果您使用共享的托管服务提供商，您可以跳过此步骤。
 
 <table>
 	<tbody>
 		<tr>
-			<th>Prerequisite</th>
-			<th>How to check</th>
-			<th>For more information</th>
+			<th>前提条件</th>
+			<th>如何检查</th>
+			<th>更多信息</th>
 		</tr>
 	<tr>
 		<td><p>Apache 2.2 or 2.4</p></td>
 		<td><p>Ubuntu: <code>apache2 -v</code></p>
 		<p>CentOS: <code>httpd -v</code></p></td>
 		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/apache.html">Apache</a></p>
-			<p>(Don't forget to <a href="{{ site.gdeurl }}install-gde/prereq/apache.html#apache-help-rewrite">enable rewrites and <code>.htaccess</code></a>!)</p></td>
+			<p>(不要忘了<a href="{{ site.gdeurl }}install-gde/prereq/apache.html#apache-help-rewrite">激活rewrites和 <code>.htaccess</code></a>!)</p></td>
 	</tr>
 	<tr>
-		<td><p>PHP 5.6.x or 5.5.x (PHP 5.4 is not supported)</p>
-			<p>See <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_install-issues.html#known-devrc-php">Known issue with certain PHP versions</a></p></td>
+		<td><p>PHP 5.6.x or 5.5.x PHP7+ (PHP 5.4已不支持)</p>
+			<p>如何<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_install-issues.html#known-devrc-php">查看自己的php版本</a></p></td>
 		<td><p><code>php -v</code></p></td>
 		<td><a href="{{ site.gdeurl }}install-gde/prereq/php-ubuntu.html">PHP Ubuntu</a><br><a href="{{ site.gdeurl }}install-gde/prereq/php-centos.html">PHP CentOS</a></td>
 	</tr>
@@ -50,28 +50,28 @@ Use the following table to verify you have the correct prerequisites to install 
 </tbody>
 </table>
 
-<h2>Step 3: Install Magento</h2>
-*	Easy installation: <a href="{{ site.gdeurl }}install-gde/install/web/install-web.html">Install the Magento software using the Setup Wizard</a>
+<h2>第三步，安装 Magento</h2>
+*	简单安装: <a href="{{ site.gdeurl }}install-gde/install/web/install-web.html">使用Magento向导进行安装</a>
 
-	<a href="{{ site.gdeurl }}install-gde/install/web/install-web-sample-data.html">Install optional sample data (Setup Wizard)</a>
-*	Advanced installation with more control: <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli.html">Install Magento software using the command line</a>
+	<a href="{{ site.gdeurl }}install-gde/install/web/install-web-sample-data.html">安装演示数据(基于Magento向导)</a>
+*	高级安装: <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli.html">使用命令行安装Magento</a>
 
-	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-sample-data.html">Install optional sample data (command line)</a>
+	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-sample-data.html">安装演示数据(基于命令行)</a>
 
-<h2>Post-installation</h2>
-*	<a href="{{ site.gdeurl }}install-gde/install/verify.html">Verify the installation</a>
-*	<a href="{{ site.gdeurl }}install-gde/trouble/tshoot.html">Troubleshooting</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/sample-data-after-magento.html">Install optional sample data after Magento</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/post-install-config.html">Configuring</a>
+<h2>安装后</h2>
+*	<a href="{{ site.gdeurl }}install-gde/install/verify.html">验证安装</a>
+*	<a href="{{ site.gdeurl }}install-gde/trouble/tshoot.html">疑难解答</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/sample-data-after-magento.html">安装Magento后安装演示数据</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/post-install-config.html">配置</a>
 
-<h2>Useful information</h2>
-At any time during your installation, take advantage of our <a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">installation quick reference (tutorial)</a> or <a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">installation roadmap (reference)</a>. They're really easy to use; the tutorial walks you through a sample installation. The roadmap provides links to common tasks throughout the guide.
+<h2>有用的信息</h2>
+在您的安装过程中, 可以使用我们的<a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">快速安装参考 (教程)</a>或者<a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">安装指南 (引用)</a>. 这些教程都是很简单的，本教程将指导你安装一个带演示数据的Magento。
 
-Use the links on the left side of the page to navigate topics in each part of the installation.
+使用左侧导航，可以安装其他部分。
 
-<h2>Required server permissions</h2>
-UNIX systems require `root` privileges to install and configure software like a web server, PHP, and so on. If you need to install this software, make sure you have `root` access.
+<h2>必须的服务器权限</h2>
+UNIX系统需要 `root` 权限来安装配置PHP,Composer,Grunt等，到你的服务器.如果需要安装,请确保您有 `root`权限.
 
-You should *not* install the Magento software in the web server docroot as the `root` user because the web server might not be able to interact with those files. 
+您不能使用ROOT权限作为Magento的文件权限,因为Root权限可能造成webserver不能访问Magento。
 
-You'll also need `root` privileges to create the <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">Magento file system owner</a> and add that owner to the web server's group. You'll use the Magento file system owner to run any commands from the command line and to set up the Magento cron job, which schedules tasks for you.
+您还需要 `root`权限来创建 <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">Magento文件权限所有者(owner)</a>并添加所有者( owner)到您的webserver用户组. 要从命令行(Cli)运行任何命令，并设置 Magento cron，您将使用 Magento 文件系统所有者.
