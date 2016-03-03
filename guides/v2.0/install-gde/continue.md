@@ -12,13 +12,13 @@ redirect_from:
   - /guides/v2.0/install-gde/install/pre-install.html
 ---
 
-## Let's get started!
-This Installation Guide helps you install the Magento software on a server that doesn't have Magento installed already. (Not sure? Go <a href="{{ site.gdeurl }}install-gde/basics/basics_magento-installed.html">here</a> first.)
+## 让我们开始吧!
+本安装指南可以帮助您在没有安装过 Magento 的服务器上安装 Magento. (已经安装过? 请<a href="{{ site.gdeurl }}install-gde/basics/basics_magento-installed.html">点击这里</a>.)
 
-<h2 id="install-overview-audience">Choose how to install the Magento software</h2>
-Want an easy installation with a compressed software archive or do you use <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer</a> to download a metapackage or contribute code to the Magento 2 codebase?
+<h2 id="install-overview-audience">选择如何安装 Magento 软件</h2>
+想简单方便的安装Magento您需要使用 <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer</a>下载Magento2的代码?
 
-Consult the following table for how to get started.
+如何开始，请参考下表.
 
 <table>
 	<!-- <col width="25%">
@@ -26,15 +26,15 @@ Consult the following table for how to get started.
 	<col width="10%"> -->
 	<tbody>
 		<tr>
-			<th>User needs</th>
-			<th>Description</th>
-			<th>High-level installation steps</th>
-			<th>Get started link</th>
+			<th>用户需要</th>
+			<th>介绍</th>
+			<th>高级安装步骤</th>
+			<th>链接</th>
 		</tr>
 	<tr>
-		<td><p>Easy installation, no command line, have your own server</p></td>
-		<td><p>Some technical expertise, command line access to the Magento server.</p></td>
-		<td><ol><li>Downloads a compressed file that contains the Magento software.</li>
+		<td><p>简单安装,不需要使用命令行, 有自己的服务器</p></td>
+		<td><p>一些技术的专业知识，能对 Magento 服务器进行命令行访问.</p></td>
+		<td><ol><li>下载一个压缩的文件，包含的 Magento 软件.</li>
 			<li>Extracts it on the Magento server or asks a network administrator to do so.</li>
 			<li>Installs the Magento software using the Setup Wizard or command line.</li></ol>
 		</td>
