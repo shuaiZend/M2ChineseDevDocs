@@ -18,7 +18,7 @@ redirect_from:
 <h2 id="install-overview-audience">选择如何安装 Magento 软件</h2>
 想简单方便的安装 Magento 您需要使用 <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer</a>下载Magento2的代码
 
-如何开始，请参考下表.
+根据您的自身条件和需求安装Magento，请参考下表.
 
 <table>
 	<!-- <col width="25%">
@@ -29,7 +29,7 @@ redirect_from:
 			<th>需要</th>
 			<th>介绍</th>
 			<th>高级安装步骤</th>
-			<th>链接</th>
+			<th>参考链接</th>
 		</tr>
 	<tr>
 		<td><p>简单安装,不需要使用命令行, 有自己的服务器</p></td>
