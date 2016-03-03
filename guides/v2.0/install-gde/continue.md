@@ -16,7 +16,7 @@ redirect_from:
 本安装指南可以帮助您在没有安装过 Magento 的服务器上安装 Magento. (已经安装过? 请<a href="{{ site.gdeurl }}install-gde/basics/basics_magento-installed.html">点击这里</a>.)
 
 <h2 id="install-overview-audience">选择如何安装 Magento 软件</h2>
-想简单方便的安装Magento您需要使用 <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer</a>下载Magento2的代码?
+想简单方便的安装 Magento 您需要使用 <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer</a>下载Magento2的代码
 
 如何开始，请参考下表.
 
@@ -26,7 +26,7 @@ redirect_from:
 	<col width="10%"> -->
 	<tbody>
 		<tr>
-			<th>用户需要</th>
+			<th>需要</th>
 			<th>介绍</th>
 			<th>高级安装步骤</th>
 			<th>链接</th>
@@ -34,38 +34,38 @@ redirect_from:
 	<tr>
 		<td><p>简单安装,不需要使用命令行, 有自己的服务器</p></td>
 		<td><p>一些技术的专业知识，能对 Magento 服务器进行命令行访问.</p></td>
-		<td><ol><li>下载一个压缩的文件，包含的 Magento 软件.</li>
-			<li>Extracts it on the Magento server or asks a network administrator to do so.</li>
-			<li>Installs the Magento software using the Setup Wizard or command line.</li></ol>
+		<td><ol><li>下载一个压缩的文件，包含的 Magento .</li>
+			<li>在服务器上解压缩文件,如果不会可以咨询服务器管理员.</li>
+			<li>使用命令行或者安装向导进行安装.</li></ol>
 		</td>
-		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/zip_install.html">Easy installation (own server)</a></p></td>
+		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/zip_install.html">简单安装(拥有服务器)</a></p></td>
 	</tr>
 	<tr>
-		<td><p>Shared hosting, easy installation, no command line access</p></td>
-		<td><p>Uses a hosting provider, has very little technical expertise, limited if any access to the Magento server.</p></td>
-		<td><ol><li>Downloads a compressed file that contains the Magento software.</li>
-			<li>Extracts it on the Magento server.</li>
-			<li>Installs the Magento software using the Setup Wizard.</li></ol>
+		<td><p>共享空间,简单安装, 没有命令行访问权限</p></td>
+		<td><p>使用共享空间, 拥有较少的技术支持, 对Magento服务器的权限有限.</p></td>
+		<td><ol><li>下载Magento安装压缩包到服务器.</li>
+			<li>在服务器上解压缩安装包.</li>
+			<li>使用安装向导进行安装.</li></ol>
 		</td>
-		<td><p><a href="{{ site.gdeurl }}install-gde/install/hosted/hosted_start.html">Easy installation (shared hosting)</a></p></td>
+		<td><p><a href="{{ site.gdeurl }}install-gde/install/hosted/hosted_start.html">简单安装 (共享空间)</a></p></td>
 	</tr>
 	<tr>
-		<td><p>Integrator, packager</p></td>
-		<td><p>Wants full control over all components installed, has access to the Magento server, highly technical, might repackage Magento CE with other components.</p></td>
-		<td><ol><li>Creates a Composer <em>project</em> that contains the list of components to use.</li>
-			<li>Uses Composer to update package dependencies; uses <code>composer create-project</code> to get the Magento metapackage.</li>
-			<li>Installs the Magento software using either a command line or the Setup Wizard.</li></ol>
-		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/integrator_install.html">Get the metapackage</a></p></td>
+		<td><p>系统集成商, 软件包</p></td>
+		<td><p>想要完全控制所有组件安装，完整的Magento服务器权限，技术很强，可能会与其他组件打包 Magento CE.</p></td>
+		<td><ol><li>创建Composer<em>项目</em>包含所有的组件.</li>
+			<li>使用 Composer更新依赖包; 使用 <code>composer create-project</code>获取Magento所有的依赖包.</li>
+			<li>使用命令行或者安装向导进行安装.</li></ol>
+		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/integrator_install.html">获得所有的Magento依赖包</a></p></td>
 	</td>
 
 	</tr>
 	<tr>
-		<td><p>Contributing developer</p></td>
-		<td><p>Contributes to the Magento codebase, highly technical, has their own Magento development server, understands Composer and GitHub.</p></td>
-		<td><ol><li>Clones the Magento 2 GitHub repository.</li>
-			<li>Uses Composer to update package dependencies.</li>
-			<li>Installs the Magento software using either a command line or the Setup Wizard.</li></ol>
-		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html">Clone the Magento repository</a></p></td>
+		<td><p>协助开发人员</p></td>
+		<td><p>贡献代码到Magento代码仓库, 较高的技术水平, 有自己的Magento开发服务器,懂Github和Composer.</p></td>
+		<td><ol><li>从Github克隆Magento2的代码.</li>
+			<li>使用Composer安装依赖包.</li>
+			<li>使用命令行或者安装向导进行安装.</li></ol>
+		<td><p><a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html">克隆Magento代码</a></p></td>
 	</td>
 	</tr>
 	
