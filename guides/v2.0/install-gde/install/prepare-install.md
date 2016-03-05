@@ -38,8 +38,8 @@ Composer是一个单独的应用程序，管理 PHP 的依赖关系. 你安装 M
 <h2 id="install-composer-install">运行 <code>composer install</code>更新依赖包</h2>
 更新安装依赖包,请跟着下面操作:
 
-1.	Log in to your Magento server as the Magento file system owner or <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">switch to that user</a>.
-2.	Change to the Magento installation directory and run `composer install`. Examples:
+1.	登录到您的Magento文件系统拥有者或者<a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">切换到这个用户</a>.
+2.	切换到Magento根目录之后运行 `composer install`. 演示:
 
 	CentOS:
 
@@ -49,29 +49,29 @@ Composer是一个单独的应用程序，管理 PHP 的依赖关系. 你安装 M
 
 		cd /var/www/magento2 && composer install
 
-	This command updates package dependencies and can take a few minutes to complete.
+	此命令更新包的依赖包，并且可能需要几分钟才能完成.
 
-	The following error might display:
+	如果显示以下错误:
 
 		[Composer\Downloader\TransportException]
 			The "https://repo.magento.com/archives/magento/composer/magento-composer-1.0.2.0.zip" file could not be downloaded (HTTP/1.1 404 Not Found)
 
-	If so, create <a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html#instgde-prereq-compose-clone-auth">`auth.json`</a> in the Magento file system owner's `<home>/.composer` directory and run `composer install` again.
+	如果是这样，请创建 <a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html#instgde-prereq-compose-clone-auth">`auth.json`</a>文件在你的Magento文件系统拥有者的用户目录下 `<home>/.composer` 之后再次运行 `composer install`.
 
 <h2 id="instgde-prereq-compose-access">设置文件系统所有权和权限</h2>
-The following sections discuss how to set file system ownership and permissions:
+以下各节讨论如何设置文件系统所有权和权限:
 
-*	<a href="#install-perms-import">Why we recommend you set file system permissions</a>
-*	<a href="#install-perms-set">File system permissions and ownership</a>
+*	<a href="#install-perms-import">为什么我们建议您设置文件系统权限</a>
+*	<a href="#install-perms-set">文件系统权限和所有权</a>
 
-<h3 id="install-perms-import">Why we recommend you set file system permissions</h3>
+<h3 id="install-perms-import">为什么我们建议您设置文件系统权限</h3>
 {% include install/file-system-perms1-why.html %}
 
-<h3 id="install-perms-set">File system permissions and ownership</h3>
+<h3 id="install-perms-set">文件系统权限和所有权</h3>
 {% include install/file-system-perms2-how.md %}
 
 #### 下一步
 安装Magento软件:
 
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli.html">Command line</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/web/install-web.html">Setup Wizard</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli.html">命令行</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/web/install-web.html">安装向导</a>
