@@ -31,20 +31,20 @@ redirect_from:
 <h2 id="new-cli-intro">Magento命令行(CLI)介绍</h2>
 {% include install/new-cli-intro.html %}
 
-This topic discusses installing the Magento software using the CLI. For information about configuring Magento, see the <a href="{{ site.gdeurl }}config-guide/bk-config-guide.html">Configuration Guide</a>.
+本主题讨论使用命令行(CLI)安装Magento。有关配置 Magento 的信息, 请点击<a href="{{ site.gdeurl }}config-guide/bk-config-guide.html">配置手册</a>.
 
-<h2 id="instgde-install-cli-prereq">Before you start your installation</h2>
+<h2 id="instgde-install-cli-prereq">在开始安装之前</h2>
 {% include install/before-you-begin-cli.html %}
 
 <div class="bs-callout bs-callout-tip">
-  <p>If you chose to enable SELinux, see <a href="{{ site.gdeurl }}install-gde/prereq/security.html">SELinux and iptables</a>.</p>
+  <p>如果你的服务器激活了SELinux, 请点击<a href="{{ site.gdeurl }}install-gde/prereq/security.html">SELinux 和 iptables</a>.</p>
 </div>
 
 
-<h2 id="instgde-install-cli-first">First steps</h2>
+<h2 id="instgde-install-cli-first">第一步</h2>
 {% include install/first-steps-cli.html %}
 
-#### Next steps 
+#### 下一步
 
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html">Get started with the command-line installation</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">Install the Magento software</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html">开始使用命令行安装Magento</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">安装Magento (CLI)</a>
