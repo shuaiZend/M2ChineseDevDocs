@@ -2,8 +2,8 @@
 layout: default 
 group: SampleData
 subgroup: T_SampleData
-title: Remove or update optional sample data modules
-menu_title: Remove or update optional sample data modules
+title: 删除演示数据模块
+menu_title: 删除演示数据模块
 menu_node: 
 menu_order: 1000
 github_link: install-gde/install/sample-data-other-cmds.md
