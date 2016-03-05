@@ -31,22 +31,22 @@ redirect_from:
 
 1.	您的系统满足<a href="{{ site.gdeurl }}install-gde/system-requirements.html">Magento2 系统要求</a>.
 2.	您已经完成安装<a href="{{ site.gdeurl }}install-gde/prereq/prereq-overview.html">Magento2系统必备组件</a>.
-3.	You took your first installation steps as discussed in <a href="{{ site.gdeurl }}install-gde/install/pre-install.html">Your install or upgrade path</a>.
-4.	After you log in to the Magento server, <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">switch to the Magento file system owner</a>.
-5.	Review the information discussed in <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html">Get started with the command-line installation</a>.
+3.	您知道<a href="{{ site.gdeurl }}install-gde/install/pre-install.html">您的安装或升级路径</a>.
+4.	登录到Magento服务器后, <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">切换到Magento文件系统拥有者</a>.
+5.	查阅更多信息请点击<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html">开始使用命令行安装</a>.
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <p>You must install Magento from its <code>bin</code> subdirectory.</p></span>
+  <p>你必须安装<code>bin</code>子目录在你的Magento2中.</p></span>
 </div>
 
-The installer is designed to be run multiple times if necessary so you can:
+安装程序被设计为可以运行多次，如果必要这样你就可以:
 
-*	Provide different values
+*	提供不同的值
 
-	For example, after you configure your web server for Secure Sockets Layer (SSL), you can run the installer to set SSL options.
-*	Correct mistakes in previous installations
-*	Install Magento in a different database instance
+	演示, 在配置您的 web 服务器的安全套接字层 (SSL) 后，您可以运行安装程序以设置 SSL 选项。
+*	更改以前安装中的错误
+*	在不同的数据库实例中安装 Magento
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
