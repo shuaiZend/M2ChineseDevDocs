@@ -50,19 +50,19 @@ redirect_from:
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <ul><li>By default, the installer doesn't overwrite the Magento database if you install the Magento software in the same database instance. You can use the optional <code>cleanup-database</code> parameter to change this behavior.</li>
-  <li>If you get errors during the installation, see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot.html">Troubleshooting</a>.</li></ul></span>
+  <ul><li>默认情况下，安装程序不会覆盖 Magento 数据库，如果你在相同的数据库实例中安装 Magento 软件。你可以使用可选的<code>cleanup-database</code> 参数来更改此行为。</li>
+  <li>如果您在安装过程中出现错误,请查阅<a href="{{ site.gdeurl }}install-gde/trouble/tshoot.html">疑难解答</a>.</li></ul></span>
 </div>
 
-<h2 id="instgde-cli-help-cmds">Installer help commands</h2>
+<h2 id="instgde-cli-help-cmds">安装程序的帮助命令</h2>
 
-You can run the following commands to find values for some required arguments:
+您可以运行下面的命令来寻找一些必需的参数:
 
 <table>
 <tbody>
 	<tr>
-		<th>Installer argument</th>
-		<th>Command</th>
+		<th>安装程序参数</th>
+		<th>命令</th>
 	</tr>
 <tr>
 	<td>Language</td>
@@ -81,20 +81,20 @@ You can run the following commands to find values for some required arguments:
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <p>If an error displays when you run these commands, make sure you updated installation dependencies as discussed in <a href="{{ site.gdeurl }}install-gde/install/prepare-install.html">Update installation dependencies</a>.</p></span>
+  <p>如果当您运行这些命令，显示的错误,请确保您已 <a href="{{ site.gdeurl }}install-gde/install/prepare-install.html">更新安装依赖包</a>.</p></span>
 </div>
 
 	
-<h2 id="instgde-install-cli-magento">Install the Magento software from the command line</h2>
-The format of the install command follows:
+<h2 id="instgde-install-cli-magento">使用命令行(CLI)安装Magento2</h2>
+Magento2的命令行安装格式是这样的:
 
 	magento setup:install --<option>=<value> ... --<option>=<value>
 
-The following table discusses the meanings of installation option names and values. Examples are provided in <a href="#install-cli-example">Sample localhost installations</a>.
+下表描述了安装选项名称和值的含义。. 比如:<a href="#install-cli-example">本地安装示例</a>.
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <p>Any options that contain spaces or special characters must be enclosed in either single or double quotes.</p></span>
+  <p>包含空格或特殊字符的任何选项必须括在单引号或双引号中。</p></span>
 </div>
 <table>
 	<col width="35%">
@@ -102,45 +102,45 @@ The following table discusses the meanings of installation option names and valu
 	<col width="10%">
 	<tbody>
 		<tr>
-			<th>Name</th>
-			<th>Value</th>
-			<th>Required?</th>
+			<th>参数名</th>
+			<th>值</th>
+			<th>必填项?</th>
 		</tr>
 		<tr>
 		<td><p>--admin-firstname</p></td>
-		<td><p>Magento administrator user's first name.</p></td>
+		<td><p>管理员账号名</p></td>
 		<td><p>Yes</p></td>
 	</tr>
 	<tr>
 		<td><p>--admin-lastname</p></td>
-		<td><p>Magento administrator user's last name.</p></td>
+		<td><p>管理员账号姓.</p></td>
 		<td><p>Yes</p></td>
 	</tr>
 	<tr>
 		<td><p>--admin-email</p></td>
-		<td><p>Magento administrator user's e-mail address.</p></td>
+		<td><p>管理员账号Email地址.</p></td>
 		<td><p>Yes</p></td>
 	</tr>
 	<tr>
 		<td><p>--admin-user</p></td>
-		<td><p>Magento administrator user name.</p></td>
+		<td><p>管理员账号登录名.</p></td>
 		<td><p>Yes</p></td>
 	</tr>
 	<tr>
 		<td><p>--admin-password</p></td>
-		<td><p>Magento administrator user password.</p>
-			<p>The password must be at least 7 characters in length and must include at least one alphabetic and at least one numeric character.</p>
-			<p>We recommend a longer, more complex password. Enclose the entire password string in single quotes and escape special characters with <code>/</code>. For example, <code>--admin-password='A0b9\%t_3\`g'</code></p></td>
+		<td><p>管理员账号的密码.</p>
+			<p>密码必须至少 7 个字符的长度，并且必须包含至少一个字母和至少一个数字字符.</p>
+			<p>我们建议更长、 更复杂的密码。将整个密码字符串括在单引号和特殊字符的转义<code>/</code>. For example, <code>--admin-password='A0b9\%t_3\`g'</code></p></td>
 		<td><p>Yes</p></td>
 	</tr>
 		<tr>
 		<td><p>--base-url</p></td>
-		<td><p>Base URL to use to access your Magento Admin and storefront in any of the following formats:</p>
+		<td><p>Base URL使用来访问你的 Magento 管理员和店面在任何下列格式:</p>
 		<ul><li><code>http[s]://&lt;host or ip>/&lt;your Magento install dir>/</code>.</p>
-		<p><strong>Note</strong>: The scheme (<code>http://</code> or <code>https://</code>) and a trailing slash are <em>both</em> required.</p>
-		<p><code>&lt;your Magento install dir></code> is the docroot-relative path in which to install the Magento software. Depending on how you set up your web server and virtual hosts, the path might be <code>magento2</code> or it might be blank.</p>
-		<p>To access Magento on localhost, you can use either <code>http://127.0.0.1/&lt;your Magento install dir>/</code> or <code>http://127.0.0.1/&lt;your Magento install dir>/</code>.</p></li>
-		<li><code>&#123;&#123;base_url&#125;&#125;</code> which represents a base URL defined by a virtual host setting or by a virtualization environment like Docker. For example, if you set up a virtual host for Magento with the host name <code>magento.example.com</code>, you can install the Magento software with <code>--base-url=&#123;&#123;base_url&#125;&#125;</code> and access the Magento Admin with a URL like <code>http://magento.example.com/admin</code>.</li></ul>
+		<p><strong>提示</strong>:(<code>http://</code> or <code>https://</code>)和最后的 <em>斜杠</em> 都是必填项.</p>
+		<p><code>&lt;your Magento install dir></code>是在安装 Magento 中 docroot 相对路径。取决于您如何设置您的 web 服务器和虚拟主机, 可能是<code>magento2</code>或者为空白.</p>
+		<p>在本地访问Magento2, 请使用 <code>http://127.0.0.1/&lt;your Magento install dir>/</code> 或者 <code>http://127.0.0.1/&lt;your Magento install dir>/</code>.</p></li>
+		<li><code>&#123;&#123;base_url&#125;&#125;</code>代表base URL defined by a virtual host setting or by a virtualization environment like Docker. For example, if you set up a virtual host for Magento with the host name <code>magento.example.com</code>, you can install the Magento software with <code>--base-url=&#123;&#123;base_url&#125;&#125;</code> and access the Magento Admin with a URL like <code>http://magento.example.com/admin</code>.</li></ul>
 
 		</td>
 		<td><p>No</p></td>
