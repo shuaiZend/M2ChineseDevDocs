@@ -5,27 +5,14 @@
 如果您想参与到我们的翻译团队中，请联系QQ58573655
 
 请翻译的时候注意:
- 尽可能根据自己的理解翻译,能加上自己的见解最好，直译看着很难受不推荐。
- 尽可能统一名词翻译称谓，比如guide翻译为手册,extension翻译为扩展而不是插件.
+ *尽可能根据自己的理解翻译,能加上自己的见解最好，直译看着很难受不推荐。
+ *尽可能统一名词翻译称谓，比如guide翻译为手册,extension翻译为扩展而不是插件.
  
-如何翻译?
+# 如何翻译?
  本项目相当于一个HTML的模板，直接翻译.md文件的内容就可以。
 
-# Building this site
 
-你可以使用Jekyll创建这个文档网站. 
-创建方法如下:
 
-```bash
-# Copy the sample config file and name it "config.yml"
-$ cp _config.devdocs.yml _config.yml
-
-# Install dependencies
-$ bundle install
-
-# Visit http://localhost:4000 in your favorite browser!
-$ bin/jekyll serve
-```
 
 如果有任何问题，请联系下面:
 
