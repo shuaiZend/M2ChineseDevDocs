@@ -2,43 +2,41 @@
 layout: default
 group: install_cli 
 subgroup: 99_contrib
-title: Update the Magento application
-menu_title: Update the Magento application
+title: 更新Magneto
+menu_title: 更新Magneto
 menu_order: 2
 menu_node: 
 github_link: install-gde/install/cli/dev_update-magento.md
 redirect_from: /guides/v2.0/install-gde/install/cli/instgde-install-magento-update-db
 ---
 
-This topic discusses how a contributing developer can update the Magento application without reinstalling it. To perform an upgrade if you're *not* a contributing developer, see <a href="{{ site.gdeurl }}comp-mgr/bk-compman-upgrade-guide.html">Updating the Magento application and components</a>.
+本主题讨论贡献开发者如何更新Magento而不用重新安装它。如果你不是开发者又想升级请看 <a href="{{ site.gdeurl }}comp-mgr/bk-compman-upgrade-guide.html">升级Magento和组件</a>.
 
-To update the Magento software if you're a contributing developer:
+如果你是贡献开发者又想升级Magento:
 
-1.	Log in to your Magento server as a user with permissions to modify files in the Magento file system (for example, the <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">switch to the Magento file system owner</a>).
-3. Save any changes you made to `composer.json` because the following steps will overwrite it:
+1.	使用有权限的用户登录到Magento服务器(for example, the <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">切换到Magento文件系统权限拥有者</a>).
+2.	
+3. 保存任何更改到`composer.json` 因为以下的更改会将其覆盖:
 
 		cd <your Magento install dir>
 		cp composer.json composer.json.old
 
-3.	Update your local repository to get the latest code:
+3.	更新你本地的资料库以获取最新的代码::
 		
 		git pull origin develop
 
 	<div class="bs-callout bs-callout-info" id="info">
 		<span class="glyphicon-class">
-  			<p>If <code>git pull origin develop</code> fails, see <a href="{{ site.gdeurl }}install-gde/trouble/git/tshoot_git-pull-origin.html">troubleshooting</a>.</p> </span>
+  			<p>如果使用<code>git pull origin develop</code>失败,请点击<a href="{{ site.gdeurl }}install-gde/trouble/git/tshoot_git-pull-origin.html">疑难解答</a>.</p> </span>
 	</div>
 				
-3.	Diff and merge your `composer.json.old` with `composer.json` installed with the Magento software.
-4.	Enter the following command:
+3.	比较和合并你的 `composer.json.old` 与 `composer.json`。
+4.	输入下面命令:
 
 		composer update
 
-5.	Update the Magento database:
+5.	更新Magento2数据库:
 
 		php <your Magento install dir>/bin/magento setup:upgrade
 
 <!-- ABBREVIATIONS -->
-
-*[contributing developer]: A developer who contributes code to the Magento 2 CE codebase
-*[contributing developers]: Developers who contribute code to the Magento 2 CE codebase
