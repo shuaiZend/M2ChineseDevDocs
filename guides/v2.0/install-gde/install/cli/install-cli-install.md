@@ -2,8 +2,8 @@
 layout: default
 group: install_cli 
 subgroup: 05_Command-line installation
-title: Install the Magento software
-menu_title: Install the Magento software
+title: 命令行安装Magento2
+menu_title: 命令行安装Magento2
 menu_order: 4
 github_link: install-gde/install/cli/install-cli-install.md
 redirect_from:
@@ -12,25 +12,25 @@ redirect_from:
 ---
 
 <div class="bs-callout bs-callout-tip">
-  <p>Totally lost? Need a helping hand? Try our <a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">installation quick reference (tutorial)</a> or <a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">installation roadmap (reference)</a>.</p>
+  <p>感到迷茫? 需要帮助? 试试我们的<a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">安装快速参考 (教程)</a> 或 <a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">安装指南 (参考)</a>.</p>
 </div>
   
-<h4>Contents</h4>
+<h4>内容索引</h4>
 
-See one of the following sections:
+请参见以下各节之一:
 
-*	<a href="#instgde-install-cli-prereq">Before you start your installation</a>
-*	<a href="#instgde-install-cli-magento">Install the Magento software from the command line</a>
+*	<a href="#instgde-install-cli-prereq">开始安装之前</a>
+*	<a href="#instgde-install-cli-magento">使用命令行(CLI)安装Magento2</a>
 
-See also <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html">Update, reinstall, uninstall</a>.
+请参见 <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html">更新, 重装, 卸载</a>.
 
 
-<h2 id="instgde-install-cli-prereq">Before you start your installation</h2>
+<h2 id="instgde-install-cli-prereq">开始安装之前</h2>
 
-Before you begin, make sure that:
+你在开始之前，请确保:
 
-1.	Your system meets the requirements discussed in <a href="{{ site.gdeurl }}install-gde/system-requirements.html">Magento system requirements</a>.
-2.	You completed all prerequisite tasks discussed in <a href="{{ site.gdeurl }}install-gde/prereq/prereq-overview.html">Prerequisites</a>.
+1.	您的系统满足<a href="{{ site.gdeurl }}install-gde/system-requirements.html">Magento2 系统要求</a>.
+2.	您已经完成安装<a href="{{ site.gdeurl }}install-gde/prereq/prereq-overview.html">Magento2系统必备组件</a>.
 3.	You took your first installation steps as discussed in <a href="{{ site.gdeurl }}install-gde/install/pre-install.html">Your install or upgrade path</a>.
 4.	After you log in to the Magento server, <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">switch to the Magento file system owner</a>.
 5.	Review the information discussed in <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html">Get started with the command-line installation</a>.
