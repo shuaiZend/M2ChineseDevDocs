@@ -2,8 +2,8 @@
 layout: default
 group: install_cli 
 subgroup: 99_contrib
-title: Reinstall the Magento software
-menu_title: Reinstall the Magento software
+title: 重新安装Magento2
+menu_title: 重新安装Magento2
 menu_order: 200
 menu_node: 
 github_link: install-gde/install/cli/dev_reinstall.md
