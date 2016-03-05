@@ -2,8 +2,8 @@
 layout: default
 group: install_cli 
 subgroup: 05_Command-line installation
-title: Back up and roll back the file system, media, and database
-menu_title: Back up and roll back the file system, media, and database
+title: 备份还原Magento文件, media和数据库
+menu_title: 备份还原Magento文件, media和数据库
 menu_node: 
 menu_order: 100
 github_link: install-gde/install/cli/install-cli-backup.md
@@ -13,21 +13,21 @@ redirect_from:
 ---
 
   
-<h4>Contents</h4>
+<h4>内容索引</h4>
 
-See one of the following sections:
+请参见以下各节之一:
 
-*	<a href="#instgde-cli-uninst-back-over">Overview of backup</a>
-*	<a href="#instgde-cli-before">First steps</a>
-*	<a href="#instgde-cli-uninst-back">Back up</a>
-*	<a href="#instgde-cli-uninst-roll">Roll back</a>
+*	<a href="#instgde-cli-uninst-back-over">备份概述</a>
+*	<a href="#instgde-cli-before">第一步</a>
+*	<a href="#instgde-cli-uninst-back">备份</a>
+*	<a href="#instgde-cli-uninst-roll">还原</a>
 
-<h2 id="instgde-cli-uninst-back-over">Overview of backup</h2>
-This command enables you to back up:
+<h2 id="instgde-cli-uninst-back-over">备份概述</h2>
+使用这个将备份以下内容:
 
-*	The Magento file system (excluding <code>var</code> and <code>pub/static</code> directories)
-*	The <code>pub/media</code> directory
-*	The Magento 2 database
+*	Magento系统文件 (包括 <code>var</code> 和 <code>pub/static</code>目录)
+*	<code>pub/media</code> 目录
+*	Magento的数据库
 
 Backups are stored in the `var/backups` directory and can be restored at any time using the <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll">magento setup:rollback</a> command.
 
