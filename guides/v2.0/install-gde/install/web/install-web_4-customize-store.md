@@ -2,8 +2,8 @@
 layout: default 
 group: install_wiz 
 subgroup: Wizard
-title: Step 4. Customize Your Store
-menu_title: Step 4. Customize Your Store
+title: 第四步. 自定义您的商店
+menu_title: 第四步. 自定义您的商店
 menu_node: 
 menu_order: 5
 github_link: install-gde/install/web/install-web_4-customize-store.md
@@ -11,5 +11,5 @@ github_link: install-gde/install/web/install-web_4-customize-store.md
 
 {% include install/web/install-web_4-customize-store.md %}
 
-#### Next step
-<a href="{{ site.gdeurl }}install-gde/install/web/install-web_5-create-admin.html">Step 5. Create Admin account</a>
+#### 下一步
+<a href="{{ site.gdeurl }}install-gde/install/web/install-web_5-create-admin.html">第五步. 创建管理员账号</a>
