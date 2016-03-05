@@ -2,8 +2,8 @@
 layout: default
 group: install_cli
 subgroup: 05_Command-line installation
-title: Install the Magento software using the command line
-menu_title: Install the Magento software using the command line
+title: 使用命令行安装Magento2
+menu_title: 使用命令行安装Magento2
 menu_node: parent
 menu_order: 1
 github_link: install-gde/install/cli/install-cli.md
@@ -13,22 +13,22 @@ redirect_from:
 ---
 
 <div class="bs-callout bs-callout-tip">
-  <p>Totally lost? Need a helping hand? Try our <a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">installation quick reference (tutorial)</a> or <a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">installation roadmap (reference)</a>.</p>
+  <p>感到迷茫了? 需要帮助? 试试我们的<a href="{{ site.gdeurl }}install-gde/install-quick-ref.html">安装快速参考 (教程)</a>或者<a href="{{ site.gdeurl }}install-gde/install-roadmap_part1.html">安装指南 (参考)</a>.</p>
 </div>
 
 <div class="bs-callout bs-callout-info" id="info">
-  <p>If you chose to enable SELinux, see <a href="{{ site.gdeurl }}install-gde/prereq/security.html">SELinux and iptables</a>.</p>
+  <p>如果您激活了SELinux, 请点击<a href="{{ site.gdeurl }}install-gde/prereq/security.html">SELinux 和 iptables</a>.</p>
 </div>
   
-<h4>Contents</h4>
+<h4>内容索引</h4>
 
-See one of the following sections:
+请参见以下各节之一:
 
-*	<a href="#new-cli-intro">Introducing the Magento command-line interface (CLI)</a>
-*	<a href="#instgde-install-cli-prereq">Before you start your installation</a>
-*	<a href="#instgde-install-cli-first">First steps</a>
+*	<a href="#new-cli-intro">Magento命令行(CLI)介绍</a>
+*	<a href="#instgde-install-cli-prereq">在开始安装之前</a>
+*	<a href="#instgde-install-cli-first">第一步</a>
 
-<h2 id="new-cli-intro">Introducing the Magento command-line interface (CLI)</h2>
+<h2 id="new-cli-intro">Magento命令行(CLI)介绍</h2>
 {% include install/new-cli-intro.html %}
 
 This topic discusses installing the Magento software using the CLI. For information about configuring Magento, see the <a href="{{ site.gdeurl }}config-guide/bk-config-guide.html">Configuration Guide</a>.
