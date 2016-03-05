@@ -2,8 +2,8 @@
 layout: default 
 group: install_wiz 
 subgroup: Wizard
-title: Step 6. Install
-menu_title: Step 6. Install
+title: 第六步. 安装
+menu_title: 第六步. 安装
 menu_node: 
 menu_order: 10
 github_link: install-gde/install/web/install-web_6-install.md
