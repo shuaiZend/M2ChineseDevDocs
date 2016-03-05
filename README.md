@@ -7,6 +7,9 @@
 请翻译的时候注意:
  尽可能根据自己的理解翻译,能加上自己的见解最好，直译看着很难受不推荐。
  尽可能统一名词翻译称谓，比如guide翻译为手册,extension翻译为扩展而不是插件.
+ 
+如何翻译?
+ 本项目相当于一个HTML的模板，直接翻译.md文件的内容就可以。
 
 # Building this site
 
@@ -32,3 +35,5 @@ $ bin/jekyll serve
 *	<a href="mailto:DL-Magento-Doc-Feedback@ebay.com">E-mail us</a>
 
 *	<a href="http://devdocs.magento.com">Visit our documentation site</a>, built on GitHub using [Jekyll](http://jekyllrb.com/).
+
+联系QQ群:9505614
