@@ -2,8 +2,8 @@
 layout: default
 group: install_cli 
 subgroup: 99_contrib
-title: Contributing developers&mdash;update, reinstall Magento
-menu_title: Contributing developers&mdash;update, reinstall Magento
+title: 协助开发人员&mdash;更新, 重装Magento
+menu_title: 协助开发人员&mdash;更新, 重装Magento
 menu_order: 1
 menu_node: parent
 github_link: install-gde/install/cli/dev_options.md
