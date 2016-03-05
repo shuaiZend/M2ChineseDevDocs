@@ -50,6 +50,6 @@ redirect_from: /guides/v1.0/install-gde/install/verify.html
 
 如果页面显示乱 (只有文字没有样式或图片), 请看<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">安装之Magento2静态文件不加载样式和图片不显示;只有文字没有图片和图形</a>.
 
-如果显示页面找不到 404 (Not Found), 请看 <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_access-browser.html">不能访问Magento2页面,404错误</a>.
+如果显示页面找不到 404 (Not Found), 请点击<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_access-browser.html">不能访问Magento2页面</a>.
 
 `The requested URL /magento2/index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`
