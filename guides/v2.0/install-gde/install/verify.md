@@ -2,8 +2,8 @@
 layout: default
 group: install
 subgroup: A_Verify
-title: Verify the installation
-menu_title: Verify the installation
+title: 验证安装成功
+menu_title: 验证安装成功
 menu_node: parent
 menu_order: 1
 github_link: install-gde/install/verify.md
@@ -13,13 +13,13 @@ redirect_from: /guides/v1.0/install-gde/install/verify.html
 <!-- This topic is referred to from Magento 2 code! Don't change the URL without informing engineering! -->
 <!-- Referring file: README.md owned by core -->
 
-#### Contents 
+#### 内容索引 
 
-*	<a href="#instgde-verify-front-sample">Verify the storefront (with optional sample data)</a>
-*	<a href="#instgde-verify-front">Verify the storefront (no sample data)</a>
-*	<a href="#instgde-verify-admin">Verify the Magento Admin</a>
+*	<a href="#instgde-verify-front-sample">验证前台 (有演示数据)</a>
+*	<a href="#instgde-verify-front">验证前台 (没有演示数据)</a>
+*	<a href="#instgde-verify-admin">验证Magento后台</a>
 
-<h2 id="instgde-verify-front-sample">Verify the storefront (with optional sample data)</h2>
+<h2 id="instgde-verify-front-sample">验证前台 (有演示数据)</h2>
 Go to the storefront in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
@@ -27,7 +27,7 @@ The following figure shows a sample storefront page. If it displays as follows, 
 <p><img src="{{ site.baseurl }}common/images/install-success_store-luma.png" alt="Magento storefront with the Luma theme"></p>
 
 
-<h2 id="instgde-verify-front">Verify the storefront (no sample data)</h2>
+<h2 id="instgde-verify-front">验证前台 (没有演示数据)</h2>
 
 Go to the storefront in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
 
@@ -37,7 +37,7 @@ The following figure shows a sample storefront page. If it displays as follows, 
 
 If the page displays unconfigured (no styles, only text), see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">After installing, images and stylesheets do not load; only text displays, no graphics</a>.
 
-<h2 id="instgde-verify-admin">Verify the Magento Admin</h2>
+<h2 id="instgde-verify-admin">验证Magento后台</h2>
 
 Go to the Magento Admin in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, and the Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in your browser's address or location bar.
 
