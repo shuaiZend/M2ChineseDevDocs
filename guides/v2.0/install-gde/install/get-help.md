@@ -2,8 +2,8 @@
 layout: default
 group: install_pre
 subgroup: YY_Help
-title: Get help with your installation
-menu_title: Get help with your installation
+title: 获取您的安装的帮助
+menu_title: 获取您的安装的帮助
 menu_order: 1
 menu_node: parent
 github_link: install-gde/install/get-help.md
