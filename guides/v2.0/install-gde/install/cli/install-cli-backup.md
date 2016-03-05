@@ -29,23 +29,23 @@ redirect_from:
 *	<code>pub/media</code> 目录
 *	Magento的数据库
 
-Backups are stored in the `var/backups` directory and can be restored at any time using the <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll">magento setup:rollback</a> command.
+备份文件将储存于`var/backups` 目录并可以使用 <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll">magento setup:rollback</a> 命令进行还原.
 
-After backing up, you can <a href="#instgde-cli-uninst-roll">roll back</a> at a later time.
+备份之后, 你可以<a href="#instgde-cli-uninst-roll">回滚还原</a>到之前.
 
-<h2 id="instgde-cli-before">First steps</h2>
+<h2 id="instgde-cli-before">第一步</h2>
 {% include install/first-steps-cli.html %}
-In addition to the command arguments discussed here, see <a href="{{ site.gdeurl }}install-gde/install/install-cli-subcommands.html#instgde-cli-subcommands-common">Common arguments</a>.
+请参见<a href="{{ site.gdeurl }}install-gde/install/install-cli-subcommands.html#instgde-cli-subcommands-common">命令参数</a>.
 
-<h2 id="instgde-cli-uninst-back">Backing up</h2>
-Command usage:
+<h2 id="instgde-cli-uninst-back">备份</h2>
+命令使用:
 
 	magento setup:backup [--code] [--media] [--db]
 
-The command performs the following tasks:
+该命令将执行以下任务:
 
-1.	Puts the store in maintenance mode.
-2.	Executes one of the following command options.
+1.	将商店切换于维护模式。
+2.	执行以下命令选项之一。
 
 	<table>
 	<col width="25%">
@@ -53,38 +53,38 @@ The command performs the following tasks:
 	<col width="35%">
 	<tbody>
 		<tr>
-			<th>Option</th>
-			<th>Meaning</th>
-			<th>Backup file name and location</th>
+			<th>命令参数</th>
+			<th>意思</th>
+			<th>备份文件的名字和位置</th>
 		</tr>
 		
 	<tr>
 		<td><p>--code</p></td>
-		<td><p>Backs up the Magento file system (excluding <code>var</code> and <code>pub/static</code> directories).</p></td>
+		<td><p>备份Magento2文件系统(包括<code>var</code>和<code>pub/static</code> 目录).</p></td>
 		<td><p>var/backups/&lt;timestamp>_filesystem.tgz</p></td>
 	</tr>
 	<tr>
 		<td><p>--media</p></td>
-		<td><p>Back up the <code>pub/media</code> directory.</p></td>
+		<td><p>备份<code>pub/media</code>目录.</p></td>
 		<td><p>var/backups/&lt;timestamp>_filesystem_media.tgz</p></td>
 	</tr>
 	<tr>
 	<tr>
 		<td><p>--db</p></td>
-		<td><p>Back up the Magento 2 database.</p></td>
+		<td><p>备份Magento2的数据库.</p></td>
 		<td><p>var/backups/&lt;timestamp>_db.gz</p></td>
 	</tr>
 	<tr>
 	</tbody>
 	</table>
 
-3.	Takes the store out of maintenance mode.
+3.	关闭维护模式。
 
-For example, to back up the file system and database,
+演示, 备份文件和数据,
 
 	magento setup:backup --code --db
 
-Messages similar to the following display:
+会回显类似于下面的显示消息:
 
 	Enabling maintenance mode
 	Code backup is starting...
@@ -97,42 +97,42 @@ Messages similar to the following display:
 	[SUCCESS]: DB backup completed successfully.
 	Disabling maintenance mode
 
-<h2 id="instgde-cli-uninst-roll">Roll back</h2>
-This section discusses how to roll back to a backup you made previously. You must know the file name of the backup file to restore.
+<h2 id="instgde-cli-uninst-roll">回滚还原</h2>
+本节讨论如何回滚到以前创建的备份。你必须知道要还原的备份文件的文件名称。
 
-To find the name of your backups, enter:
+找到备份文件的文件名称输入:
 
 	magento info:backups:list
 
-The first string in the backup file name is the timestamp.
+备份文件的文件名中的第一个字符串是时间戳。
 
-To roll back to a previous backup, enter:
+要回滚到以前的备份，请输入:
 
 	magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 
-For example, to restore a media backup named `1440611839_filesystem_media.tgz`, enter
+演示, 要回滚还原的文件名为 `1440611839_filesystem_media.tgz`, 输入
 
 	magento setup:rollback -m 1440611839_filesystem_media.tgz
 
-Messages similar to the following display:
+会回显类似于下面的显示的消息:
 
 	[SUCCESS]: Media rollback completed successfully.
 	Please set file permission of bin/magento to executable
 	Disabling maintenance mode
 
 <div class="bs-callout bs-callout-info" id="info">
-  <p>If the command results in a <code>Segmentation fault</code> message, see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_segfault.html">Segmentation fault during rollback</a>.</p>
+  <p>如果回显的消息中显示<code>Segmentation fault</code>, 请点击<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_segfault.html">Magento回滚还原失败</a>.</p>
 </div>
 
-#### Related topics
+#### 相关主题
 
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">Installing the Magento software using the command line</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">Enable or disable modules</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-maint.html">Enable or disable maintenance mode</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">Create the deployment configuration</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-db.html">Create the Magento database schema</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-store.html">Configure the store</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-admin.html">Create a Magento administrator</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-uninstall">Uninstall the Magento software</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update">Update the Magento software</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-reinstall">Reinstall the Magento software</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">使用命令行安装Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">激活或禁用Magento2模块</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-maint.html">激活或关闭Magento2维护模式</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">创建部署配置</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-db.html">创建 Magento2 数据库架构</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-store.html">配置储存</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-admin.html">创建Magento2管理员账号</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-uninstall">卸载Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update">更新Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-reinstall">重装Magento2</a>
