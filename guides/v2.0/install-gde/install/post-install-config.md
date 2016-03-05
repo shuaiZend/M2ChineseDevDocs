@@ -2,24 +2,24 @@
 layout: default
 group: install
 subgroup: B_Verify
-title: Configure the Magento application
-menu_title: Configure the Magento application
+title: 配置Magento应用
+menu_title: 配置Magento应用
 menu_node: parent
 menu_order: 1
 github_link: install-gde/install/post-install-config.md
 ---
 
-## Configure the Magento application
-Now that you've finished installing the Magento application, you need to configure it. This topic provides some recommended configuration settings for Magento; the list is not complete so watch this space.
+## 配置Magento应用
+现在，您已经完成安装 Magento 的应用程序，您需要配置它。本主题提供了一些建议配置设置。
 
 #### Contents
-*	<a href="#post-install-cron">Set up cron</a>
-*	<a href="#post-install-secy">Security settings</a>
-*	<a href="#post-install-rewrites">Enable Apache server rewrites</a>
-*	<a href="#post-install-server">Server settings</a>
-*	<a href="#post-install-ee">Settings for Magento Enterprise Edition (EE) only</a>
+*	<a href="#post-install-cron">设置cron</a>
+*	<a href="#post-install-secy">安全配置</a>
+*	<a href="#post-install-rewrites">激活Apach重写</a>
+*	<a href="#post-install-server">服务器设置</a>
+*	<a href="#post-install-ee">设置Magento商业版(Only Magento EE)</a>
 
-<h2 id="post-install-cron">Set up cron</h2>
+<h2 id="post-install-cron">设置cron</h2>
 cron&mdash;the UNIX task scheduler&mdash;is critical to Magento's day-to-day operations. It schedules things like reindexing, newsletters, e-mails, sitemaps, and so on.
 
 Immediately after finishing your Magento installation, set up a *crontab* for the Magento file system owner.
