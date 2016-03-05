@@ -2,41 +2,41 @@
 layout: default
 group: install_pre
 subgroup: T_Developer
-title: Update installation dependencies
-menu_title: Update installation dependencies 
+title: 更新安装依赖
+menu_title: 更新安装依赖
 menu_node:
 menu_order: 10
 github_link: install-gde/install/prepare-install.md
 redirect_from: /guides/v1.0/install-gde/install/prepare-install.html
 ---
 
-#### Contents
+#### 内容索引
 
-*	<a href="#install-update-depend">Introduction to Magento installation dependencies</a>
-*	<a href="#install-composer-install">Run `composer install` to update dependencies</a>
-*	<a href="#instgde-prereq-compose-access">Set file system ownership and permissions</a>
+*	<a href="#install-update-depend">Magento 安装依赖简介</a>
+*	<a href="#install-composer-install">运行`composer install`更新安装依赖</a>
+*	<a href="#instgde-prereq-compose-access">设置文件系统所有权和权限</a>
 
   
-<h2 id="install-update-depend">Introduction to Magento installation dependencies</h2>
-We now use <a href="http://getcomposer.org">Composer</a> to resolve dependencies before you install the Magento software and extensions.
+<h2 id="install-update-depend">Magento 安装依赖简介</h2>
+我们现在使用<a href="http://getcomposer.org">Composer</a>解决Magento和其扩展安装之前的依赖关系。
 
-Composer is a separate application that manages PHP dependencies. Before you can install the Magento software, you must perform the following tasks in the order shown:
+Composer是一个单独的应用程序，管理 PHP 的依赖关系. 你安装 Magento 软件之前，您必须按显示的顺序执行以下任务:
 
-1.	<a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html">Install the Composer software</a>.
-2.	<a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">Create the Magento file system owner</a> so Composer writes files to the web server docroot as the correct user.
-2.	Run the <a href="#install-composer-install"><code>composer install</code> command</a> from your Magento root directory (for example, `/var/www/magento2/`).
+1.	<a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html">安装Composer</a>.
+2.	<a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">创建Magento文件权限拥有者</a> 让Composer有正确的权限可以写入Magento的安装目录.
+2.	在Magento的根目录,运行<a href="#install-composer-install"><code>composer install</code> 命令</a> (演示: `/var/www/magento2/`).
 
-	The Magento root directory is a subdirectory of your web server's docroot. Need help locating the docroot? Click <a href="{{ site.gdeurl }}install-gde/basics/basics_docroot.html">here</a>.
+	Magento安装于docroot的子目录.需要定位docroot? 点击 <a href="{{ site.gdeurl }}install-gde/basics/basics_docroot.html">这里</a>.
 
 	<div class="bs-callout bs-callout-info" id="info">
-  		<p>If the following error displays, see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_composer-fail.html">troubleshooting</a>:</p>
+  		<p>如果显示以下的错误, 请看 <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_composer-fail.html">疑难解答</a>:</p>
   		<pre>file_get_contents(app/etc/NonComposerComponentRegistration.php): failed to open stream: No such file or directory</pre>
 	</div>
 
-For you to be able to run the Magento application, make sure you perform all tasks as a user with privileges to write to the web server docroot. One way to do this is to log in as or switch to the <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">switch to the Magento file system owner</a>.
+为了Magento能正常运行，请确保web服务器有权限可以写入Magento的文件目录. 这个方法可以作为测试 <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html#install-update-depend-user-switch">切换到Magento文件拥有者用户</a>.
 
-<h2 id="install-composer-install">Run <code>composer install</code> to update dependencies</h2>
-Update installation dependencies as follows:
+<h2 id="install-composer-install">运行 <code>composer install</code>更新依赖包</h2>
+更新安装依赖包,请跟着下面操作:
 
 1.	Log in to your Magento server as the Magento file system owner or <a href="{{ site.gdeurl }}install-gde/prereq/apache-user.html">switch to that user</a>.
 2.	Change to the Magento installation directory and run `composer install`. Examples:
@@ -58,7 +58,7 @@ Update installation dependencies as follows:
 
 	If so, create <a href="{{ site.gdeurl }}install-gde/prereq/dev_install.html#instgde-prereq-compose-clone-auth">`auth.json`</a> in the Magento file system owner's `<home>/.composer` directory and run `composer install` again.
 
-<h2 id="instgde-prereq-compose-access">Set file system ownership and permissions</h2>
+<h2 id="instgde-prereq-compose-access">设置文件系统所有权和权限</h2>
 The following sections discuss how to set file system ownership and permissions:
 
 *	<a href="#install-perms-import">Why we recommend you set file system permissions</a>
@@ -70,8 +70,8 @@ The following sections discuss how to set file system ownership and permissions:
 <h3 id="install-perms-set">File system permissions and ownership</h3>
 {% include install/file-system-perms2-how.md %}
 
-#### Next step
-Install the Magento software:
+#### 下一步
+安装Magento软件:
 
 *	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli.html">Command line</a>
 *	<a href="{{ site.gdeurl }}install-gde/install/web/install-web.html">Setup Wizard</a>
