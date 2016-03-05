@@ -20,37 +20,36 @@ redirect_from: /guides/v1.0/install-gde/install/verify.html
 *	<a href="#instgde-verify-admin">验证Magento后台</a>
 
 <h2 id="instgde-verify-front-sample">验证前台 (有演示数据)</h2>
-Go to the storefront in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
+从浏览器打开网店前台. 演示, 如果你安装的Magento的域名是 `http://www.example.com`, 输入该地址进你的浏览器。
 
-The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
+如果如下图显示,恭喜你安装成功了!
 
 <p><img src="{{ site.baseurl }}common/images/install-success_store-luma.png" alt="Magento storefront with the Luma theme"></p>
 
 
 <h2 id="instgde-verify-front">验证前台 (没有演示数据)</h2>
 
-Go to the storefront in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
+从浏览器打开网店前台. 演示, 如果你安装的Magento的域名是 `http://www.example.com`, 输入该地址进你的浏览器。
 
-The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
+如果如下图显示,恭喜你安装成功了!
 
 <p><img src="{{ site.baseurl }}common/images/install-success_store.png" width="450px" alt="Magento storefront which verifies a successful installation"></p>
 
-If the page displays unconfigured (no styles, only text), see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">After installing, images and stylesheets do not load; only text displays, no graphics</a>.
+如果不像上图所示 (只有文字，没有样式), 请看<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">安装之Magento2静态文件不加载样式和图片不显示;只有文字没有图片和图形</a>.
 
 <h2 id="instgde-verify-admin">验证Magento后台</h2>
 
-Go to the Magento Admin in a web browser. For example, if your Magento installation base URL is `http://www.example.com`, and the Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in your browser's address or location bar.
+使用浏览器进入后台.演示, 如果你安装的Magento域名是 `http://www.example.com`, 后台地址是 `admin_au1nT`, 请输入 `http://www.example.com/admin_au1nT` 进你的浏览器地址栏。
 
-(The Admin URI is specified by the value of the `backend-frontname` installation parameter.)
+(Mageno后台地址是一个固定的值，`backend-frontname`安装中会有提示.)
 
-When prompted, log in as a Magento Administrator.
 
-The following figure shows a sample Magento Admin page. If it displays as follows, your installation was a success!
+下图显示了示例 Magento 管理页面.如果是这样显示，恭喜您安装成功了!
 
 <p><img src="{{ site.baseurl }}common/images/install_success_admin.png" alt="Magento Admin which verifies a successful installation"></p>
 
-If the page displays unconfigured (no styles, only text), see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">After installing, images and stylesheets do not load; only text displays, no graphics</a>.
+如果页面显示乱 (只有文字没有样式或图片), 请看<a href="{{ site.gdeurl }}install-gde/trouble/tshoot_no-styles.html">安装之Magento2静态文件不加载样式和图片不显示;只有文字没有图片和图形</a>.
 
-If you get a 404 (Not Found) error similar to the following, see <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_access-browser.html">Cannot access Magento software in a web browser</a>.
+如果显示页面找不到 404 (Not Found), 请看 <a href="{{ site.gdeurl }}install-gde/trouble/tshoot_access-browser.html">不能访问Magento2页面,404错误</a>.
 
-`The requested URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`
+`The requested URL /magento2/index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`
