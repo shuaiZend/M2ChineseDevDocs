@@ -37,14 +37,14 @@ github_link: frontend-dev-guide/css-guide/css_quick_guide_approach.md
 <li>添加你的Less代码到这个文件.</li>
 </ol>
 
-扩展主题使用 <code>_extend.less</code>最简单的办法是一切使用默认主题的样式, 但是你想更改或者增加更多的样式.
+扩展主题使用 <code>_extend.less</code>最简单的办法是一切使用默认主题的样式, 但是你想增加更多的样式.
 
 <h2 id="simple_override">最简单的方法来重写父样式</h2>
 
 重写父样式 (即，重写默认 Magento UI 库变量):
 <ol>
 <li>在你的主题目录创建<code>web/css/source</code>子目录. </li>
-<li>并在这个文件下创建一个<code>_theme.less</code>文件. 然后看起来像下面的路径:
+<li>并在这个文件下创建一个<code>_theme.less</code>文件. 然后看起路径像下面这样:
 
 <pre>
 &lt;theme_dir&gt;/
@@ -59,7 +59,7 @@ github_link: frontend-dev-guide/css-guide/css_quick_guide_approach.md
 但是你要记住 <code>_theme.less</code> 重写父级 <code>_theme.less</code>. 
 
 <li>Copy all variables you need from the parent <code>_theme.less</code>, including those which will not be changed. For example if your theme inherits from Blank, the <code>_theme.less</code> you should copy from is located at <code>&lt;Magento_Blank_theme_dir&gt;/web/css/source/_theme.less</code></li>
-<li>Make the necessary changes.</li>
+<li>进行必要的更改.</li>
 </ol>
 
 The drawback of this approach is that you need to monitor and manually update your files whenever the parent's <code>_theme.less</code> is updated.
