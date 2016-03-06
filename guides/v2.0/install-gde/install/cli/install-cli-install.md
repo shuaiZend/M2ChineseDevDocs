@@ -310,35 +310,37 @@ Magento2的命令行安装格式是这样的:
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <p>To enable or disable modules after installing Magento, see <a href="{{ site.gdeurl }}install-gde/install/install-cli-subcommands-enable.html">Enable and disable modules</a>.</p>
+  <p>安装 Magento2 后，如果需要激活或者禁用模块, 请点击<a href="{{ site.gdeurl }}install-gde/install/install-cli-subcommands-enable.html">激活和禁用Magento2模块</a>.</p>
   	</span>
 </div>
 
-<h4 id="install-cli-example">Sample localhost installations</h4>
+<h4 id="install-cli-example">示例本地主机安装</h4>
 
-**Example 1**
+**示例 1**
 
-The following example installs Magento with the following options:
+下面的示例 安装 Magento2 时使用以下配置:
 
-*	The Magento software is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Magento Admin is `admin`; therefore:
+*	Magento2安装于 `magento2` 目录，该目录位于web服务器(本地主机,`localhost`) docroot 目录下。后台路径为`admin`;
+*	
+*	因此:
 
-	Your storefront URL is `http://127.0.0.1`
+	商店前台URL地址为 `http://127.0.0.1`
 
-*	The database server is on the same host as the web server.
+*	数据库和WEB服务器都在同一台服务器上，也就是本地主机.
 
-	The database name is `magento`, and the user name and password are both `magento`
+	数据库名为 `magento`, 用户名密码都是 `magento`
 
-*	Uses server rewrites
+*	启用服务器重写(rewrites)
 
-*	The Magento administrator has the following properties:
+*	Magento 管理员账号具有以下属性:
 
-	*	First and last name are `Magento User`
-	*	User name is `admin` and the password is `admin123`
-	*	E-mail address is `user@example.com`
+	*	管理员姓名为 `Magento User`
+	*	登录用户名 `admin`  密码是 `admin123`
+	*	E-mail地址是 `user@example.com`
 
-*	Default language is `en_US` (U.S. English)
-*	Default currency is U.S. dollars
-*	Default time zone is U.S. Central (America/Chicago)
+*	默认语言为 `en_US` (U.S. 英语)
+*	默认货币为美刀 (U.S. dollars)
+*	默认时区为美国中区 (America/Chicago)
 
 		magento setup:install --base-url=http://127.0.0.1/magento2/ \
 		--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
@@ -346,7 +348,7 @@ The following example installs Magento with the following options:
 		--admin-user=admin --admin-password=admin123 --language=en_US \
 		--currency=USD --timezone=America/Chicago --use-rewrites=1
 
-Messages similar to the following display to indicate a successful installation:
+回显和下面一样表示Magento安装成功
 
 	Post installation file permissions check...
 	For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'	
@@ -355,31 +357,33 @@ Messages similar to the following display to indicate a successful installation:
 	[SUCCESS]: Admin Panel URI: /admin_puu71q
 
 
-**Example 2** (with additional options)
+**示例 2** (附加选项)
 
-The following example installs Magento with the following options:
+下面的示例 安装 Magento 时使用以下配置:
 
-*	The Magento software is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Magento Admin is `admin`; therefore:
+*	Magento2安装于 `magento2` 目录，该目录位于web服务器(本地主机,`localhost`) docroot 目录下。后台路径为`admin`;
+*	
+*	因此:
 
-	Your storefront URL is `http://127.0.0.1`
+	商店前台URL地址为 `http://127.0.0.1`
 
-*	The database server is on the same host as the web server.
+*	数据库和WEB服务器都在同一台服务器上，也就是本地主机.
 
-	The database name is `magento`, and the user name and password are both `magento`
+	数据库名为 `magento`, 用户名密码都是 `magento`
 
-*	The Magento administrator has the following properties:
+*	Magento 管理员账号具有以下属性:
 
 	*	First and last name are is `Magento User`
 	*	User name is `admin` and the password is `admin123`
 	*	E-mail address is `user@example.com`
 
-*	Default language is `en_US` (U.S. English)
-*	Default currency is U.S. dollars
-*	Default time zone is U.S. Central (America/Chicago)
-*	The installer first cleans up the database before installing the tables and schema
-*	You use a sales order increment prefix `ORD$` and because it contains a special character (`$`), the value must be enclosed in double quotes
-*	Session data is saved in the database
-*	Uses server rewrites
+*	默认语言为 `en_US` (U.S. 英语)
+*	默认货币为美刀 (U.S. dollars)
+*	默认时区为美国中区 (America/Chicago)
+*	在安装之前请先清理干净数据库结构和数据库数据
+*	给销售订单表增加表前缀 `ORD$` ,因为表前缀有特殊符号 (`$`),所以需要使用双括号转移该值。
+*	session保存于数据库中
+*	启用服务器URL重写(rewrite)
 
 		magento setup:install --base-url=http://127.0.0.1/magento2/ \
 		--db-host=localhost --db-name=magento \
@@ -389,7 +393,7 @@ The following example installs Magento with the following options:
 		--currency=USD --timezone=America/Chicago --cleanup-database \
 		--sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1
 
-Messages similar to the following display to indicate a successful installation:
+回显和下面一样表示Magento安装成功
 
 	Post installation file permissions check...
 	For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'	
@@ -400,9 +404,9 @@ Messages similar to the following display to indicate a successful installation:
 
 <div class="bs-callout bs-callout-info" id="info">
 <span class="glyphicon-class">
-  <p>The command must be entered either on a single line or, as in the preceding example, with a <code>\</code> character at the end of each line.</p></span>
+  <p>安装命令输入必须为一行，就像上面的代码使用 <code>\</code> 一样.</p></span>
 </div>
 
-#### Next step
+#### 下一步
 
-<a href="{{ site.gdeurl }}install-gde/install/verify.html">Verify the installation</a>.
+<a href="{{ site.gdeurl }}install-gde/install/verify.html">验证安装</a>.
