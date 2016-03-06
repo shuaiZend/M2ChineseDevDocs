@@ -2,45 +2,45 @@
 layout: default
 group: install_cli 
 subgroup: 05_Command-line installation
-title: Create or unlock a Magento administrator account
-menu_title: Create or unlock a Magento administrator account
+title: 创建或者解锁Magento2后台管理员账号
+menu_title: 创建或者解锁Magento2后台管理员账号
 menu_node: 
 menu_order: 50
 github_link: install-gde/install/cli/install-cli-subcommands-admin.md
 ---
 
   
-<h4>Contents</h4>
-See one of the following sections:
+<h4>内容索引</h4>
+请参见以下各节之一:
 
-*	<a href="#instgde-install-cli-first">First steps</a>
-*	<a href="#instgde-cli-admin-prereq">Prerequisites</a>
-*	<a href="#instgde-cli-admin">Create an administrator</a>
-*	<a href="#instgde-cli-admin-unlock">Unlock an administrator account</a>
+*	<a href="#instgde-install-cli-first">第一步</a>
+*	<a href="#instgde-cli-admin-prereq">系统必备组件</a>
+*	<a href="#instgde-cli-admin">命令行创建Magento2管理员账号</a>
+*	<a href="#instgde-cli-admin-unlock">命令行解锁Magento2管理员账号</a>
 
 
-<h2 id="instgde-cli-before">First steps</h2>
+<h2 id="instgde-cli-before">第一步</h2>
 {% include install/first-steps-cli.html %}
-In addition to the command arguments discussed here, see <a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common">Common arguments</a>.
+关于命令行的参数,请查阅<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common">Magento2命令行参数</a>.
 
-<h2 id="instgde-cli-admin-prereq">Prerequisites</h2>
-Before you can use this command, you must do all of the following:
+<h2 id="instgde-cli-admin-prereq">系统必备组件</h2>
+使用命令行之前,您需要做以下步骤:
 
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">Create the deployment configuration</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">Enable at minimum the Magento_Authorization and Magento_User modules</a>
-*	Create the Magento database schema
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">创建部署配置</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">激活minimum， Magento_Authorization 和 Magento_User 模块</a>
+*	创建 Magento 数据库架构
 
 	<div class="bs-callout bs-callout-info" id="info">
 		<span class="glyphicon-class">
-  		<p>The simplest way to create the database is to use the command <code>magento setup:upgrade</code>.</span>
+  		<p>创建数据库的最简单方法是使用命令: <code>magento setup:upgrade</code>.</span>
 	</div>
 
-<h2 id="instgde-cli-admin">Create an administrator</h2>
-Command usage:
+<h2 id="instgde-cli-admin">创建Magento2的后台管理员</h2>
+使用命令:
 
 	magento admin:user:create [--<parameter_name>=<value>, ...]
 
-where the following table defines parameters and values.
+下表定义了参数和值。
 
 <table>
 	<col width="25%">
@@ -48,9 +48,9 @@ where the following table defines parameters and values.
 	<col width="10%">
 	<tbody>
 		<tr>
-			<th>Name</th>
-			<th>Value</th>
-			<th>Required?</th>
+			<th>名</th>
+			<th>值</th>
+			<th>是否必须?</th>
 		</tr>
 		<tr>
 		<td><p>--admin-firstname</p></td>
@@ -83,17 +83,17 @@ where the following table defines parameters and values.
 	</tbody>
 </table>
 
-<h2 id="instgde-cli-admin-unlock">Unlock an administrator account</h2>
-Use this command to unlock the account of an administrator that was locked, typically because of multiple incorrect login attempts.
+<h2 id="instgde-cli-admin-unlock">解锁Magento2后台管理员账号</h2>
+使用此命令可以解锁被锁定，通常由于管理员帐户密码被多次输错或者被暴力破解。
 
 	magento admin:user:unlock {user name}
 
-You must specify the administrator's user name. Example:
+您必须指定管理员的用户名称。示例:
 
 	magento admin:user:unlock admin
 	The user account "admin" has been unlocked
 
-If the account is either not unlocked or if there was a problem, the following message displays:
+如果该帐户没有被锁定，将回显以下消息:
 
 	The user account "admin" was not locked or could not be unlocked
 
@@ -103,18 +103,18 @@ If the account doesn't exist, the following message displays:
 
 	Couldn't find the user account "bob"
 
-#### Related topics
+#### 相关阅读
 
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">Installing the Magento software using the command line</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">Enable or disable modules</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-mods.html">Uninstall modules</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">Create the deployment configuration</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-install.html">使用命令行安装Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-enable.html">激活或者禁用Magento2模块</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-mods.html">卸载模块</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-deployment.html">创建部署配置</a>
 *	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-maint.html">Enable or disable maintenance mode</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-db.html">Create the Magento database schema</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-store.html">Configure the store</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-backup.html">Back up the file system, media, and database</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-theme-uninstall.html">Uninstall themes</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-langpk.html">Uninstall language packages</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-uninstall">Uninstall the Magento software</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update">Update the Magento software</a>
-*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-reinstall">Reinstall the Magento software</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-db.html">创建 Magento 数据库架构</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-subcommands-store.html">配置存储</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-backup.html">备份文件, media和数据库</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-theme-uninstall.html">卸载Magento2主题</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall-langpk.html">卸载Magento2语言包</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-uninstall">卸载Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update">更新Magento2</a>
+*	<a href="{{ site.gdeurl }}install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-reinstall">重装Magento2</a>
