@@ -7,7 +7,7 @@ menu_title: 自定义主题样式的简单方法
 menu_order: 1
 github_link: frontend-dev-guide/css-guide/css_quick_guide_approach.md
 ---
-<h2>本主题是什么</h2>
+<h2>本主题说什么</h2>
 假设您创建了一个新的主题从默认的Magento主题Magento blank或luma继承，并选择 <a href="{{site.gdeurl}}frontend-dev-guide/css-guide/css_quick_guide_mode.html">LESS编译模式</a>.下一个是什么?在何处添加样式更改?本主题提供快速解答。
 
 <h3>内容索引</h3>
@@ -64,7 +64,7 @@ github_link: frontend-dev-guide/css-guide/css_quick_guide_approach.md
 
 The drawback of this approach is that you need to monitor and manually update your files whenever the parent's <code>_theme.less</code> is updated.
 
-<h2 id="structured_changes">Adding structured changes</h2>
+<h2 id="structured_changes">添加组织结构的变化</h2>
 
 To make your changes easier to read and support, structure them by adding a separate overriding or extending <code>.less</code> files for each <a href="{{site.gdeurl}}frontend-dev-guide/css-topics/theme-ui-lib.html#library_elements" target="_blank">Magento UI library component</a> you change. Let's use the <code>button</code> component implemented in <code>_button.less</code> as an illustration.
 
