@@ -2,12 +2,12 @@
 layout: default
 group: fedg
 subgroup: D_CSS_G
-title: Simple style changes with client-side LESS compilation vs. server-side
-menu_title: Simple style changes with client-side LESS compilation vs. server-side
+title: 简单样式更改 客户端Less编译与服务端Less编译对比
+menu_title: 简单样式更改 客户端Less编译与服务端Less编译对比
 menu_order: 2
 github_link: frontend-dev-guide/css-guide/css_quick_guide_mode.md
 ---
-<h2> What's in this topic </h2>
+<h2> 本文说什么 </h2>
 
 After you <a href="{{site.gdeurl}}frontend-dev-guide/themes/theme-create.html" target="_blank">create a theme</a>, before starting to change the styles, is deciding, which LESS compilation mode you will use. There are <a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css-preprocess.html#LESS compilation modes" target="_blank">two modes available in Magento</a>: server-side compilation mode (the default one, recommended for production) and client-side (recommended for theme development). 
 This topic demonstrates on a practical example how the choice of the mode influences the styles development.
@@ -127,8 +127,8 @@ Where <code>&lt;your_theme&gt;</code> is the code of your theme. Conventionally 
 
 If your Magento instance uses the client-side compilation mode, simple changes are applied at once. In case of more sophisticated changes, you might need to manually clean the theme sub-directory in the <code>pub/static/frontend</code> directory. There are more details about these types of changes and about the client-side mode implementation in the <a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css_debug.html#css_debug_client" target="_blank">Styles debugging</a> topic.
 
-<h2>Recommended reading</h2>
+<h2>推荐的阅读</h2>
 <ul>
-<li><a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css_debug.html" target="_blank">Styles debugging</a></li>
-<li><a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css-preprocess.html" target="_blank">CSS preprocessing</a></li>
+<li><a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css_debug.html" target="_blank">样式调试</a></li>
+<li><a href="{{site.gdeurl}}frontend-dev-guide/css-topics/css-preprocess.html" target="_blank">CSS 预处理</a></li>
 </ul>
