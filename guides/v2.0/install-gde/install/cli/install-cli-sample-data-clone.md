@@ -2,8 +2,8 @@
 layout: default
 group: install_cli 
 subgroup: 02_sample
-title: Install by cloning repositories
-menu_title: Install by cloning repositories
+title: 克隆Github源码库安装
+menu_title: 克隆Github源码库安装
 menu_node: 
 menu_order: 4
 github_link: install-gde/install/cli/install-cli-sample-data-clone.md
