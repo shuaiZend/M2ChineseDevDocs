@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '38'
+gem 'github-pages', group: :jekyll_plugins
 gem 'rouge'
