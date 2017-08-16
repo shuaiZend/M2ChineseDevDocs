@@ -23,7 +23,7 @@ m1xgithuburl: "https://github.com/magento/devdocs/tree/develop/guides/m1x/"
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 incremental: true
 
